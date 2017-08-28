@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="StickersPlaceFooterView" id="fVo-v5-x5z" customClass="StickersPlaceFooterView" customModule="StickerApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="120"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="in collaboration with " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Td2-DO-JyK">
+                    <rect key="frame" x="123" y="102" width="130" height="16.5"/>
+                    <fontDescription key="fontDescription" name=".SFNSText" family=".SF NS Text" pointSize="14"/>
+                    <color key="textColor" red="0.6705882352941176" green="0.6705882352941176" blue="0.6705882352941176" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E5R-Gz-yfw">
+                    <rect key="frame" x="10" y="35" width="355" height="2"/>
+                    <color key="backgroundColor" red="0.97254901959999995" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="2" id="Flb-el-6Xu"/>
+                    </constraints>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Stickerplace_logo_final-01_small" translatesAutoresizingMaskIntoConstraints="NO" id="CHn-K1-gmQ">
+                    <rect key="frame" x="127" y="45" width="120" height="57"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="2sg-0s-TlK"/>
+                        <constraint firstAttribute="width" constant="120" id="EU8-ND-Qhe"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="E5R-Gz-yfw" firstAttribute="leading" secondItem="fVo-v5-x5z" secondAttribute="leading" constant="10" id="3NW-CB-EWj"/>
+                <constraint firstItem="E5R-Gz-yfw" firstAttribute="top" secondItem="fVo-v5-x5z" secondAttribute="top" constant="35" id="6G1-FT-Ldx"/>
+                <constraint firstItem="CHn-K1-gmQ" firstAttribute="top" secondItem="E5R-Gz-yfw" secondAttribute="bottom" constant="35" id="BWt-oz-UCv"/>
+                <constraint firstItem="Td2-DO-JyK" firstAttribute="top" secondItem="CHn-K1-gmQ" secondAttribute="bottom" id="Oy3-uo-fAV"/>
+                <constraint firstAttribute="trailing" secondItem="E5R-Gz-yfw" secondAttribute="trailing" constant="10" id="fQU-gk-0u1"/>
+                <constraint firstItem="Td2-DO-JyK" firstAttribute="centerX" secondItem="fVo-v5-x5z" secondAttribute="centerX" id="ne8-qL-i61"/>
+                <constraint firstItem="CHn-K1-gmQ" firstAttribute="centerX" secondItem="E5R-Gz-yfw" secondAttribute="centerX" id="wAF-y6-9gs"/>
+            </constraints>
+            <connections>
+                <outlet property="descriptionLabel" destination="Td2-DO-JyK" id="Nh7-6C-ENO"/>
+                <outlet property="logoImageViewHeightConstraint" destination="2sg-0s-TlK" id="pj8-g9-V49"/>
+                <outlet property="logoImageViewWidthConstraint" destination="EU8-ND-Qhe" id="oWn-FO-yW3"/>
+                <outlet property="stickerImageView" destination="CHn-K1-gmQ" id="fef-MK-Isd"/>
+            </connections>
+            <point key="canvasLocation" x="93.5" y="49"/>
+        </collectionReusableView>
+    </objects>
+    <resources>
+        <image name="Stickerplace_logo_final-01_small" width="107" height="17"/>
+    </resources>
+</document>

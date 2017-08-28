@@ -1,0 +1,6 @@
+Simple guide to use this example:
+1. Contact with Sticker.Place to obtain API Key (my@sticker.place)
+2. Upload Stickers to Sticker.Place to obtain Sticker Pack ID
+3. Edit MessagesExtension/settings.plist with API Key and Sticker Pack ID
+
+Now you are ready to go! Have fun :)
